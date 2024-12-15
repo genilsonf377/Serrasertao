@@ -1,117 +1,201 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-    <body bgcolor="#11b91f">
- 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Serra Sertão</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-
-
-    <div>
-    <h1>Serra Sertão</h1>
-    
-    
-    <nav>
-        <ul>
-            <button><li><a href="autor.html">Autor</a></li></button><br><br>
-            <button><li><a href="index.html">Início</a></li></ul></button>
-        </ul>
-      </nav>
-      <!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-  
-  <title>Inscritos - Serra Sertão de Jiu-Jitsu</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #11b91f;
-      padding: 20px;
-    }
-
-    .container {
-      max-width: 600px;
-      margin: 0 auto;
-      padding: 20px;
-      background: #fff;
-      border-radius: 8px;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    }
-
-    h2 {
-      text-align: center;
-      color: #333;
-      margin-bottom: 20px;
-    }
-
-    .group {
-      margin-bottom: 20px;
-    }
-
-    .group h3 {
-      color: #fff;
-      padding: 10px;
-      border-radius: 5px;
-    }
-
-    .faixa-branca { background-color: #d9d9d9; }
-    .faixa-azul { background-color: #5b9bd5; }
-    .faixa-preta { background-color: #000; }
-
-    ul {
-      list-style-type: none;
-      padding: 0;
-    }
-
-    li {
-      padding: 8px 10px;
-      border: 1px solid #ccc;
-      margin-bottom: 5px;
-      border-radius: 4px;
-    }
-
-    .peso-leve { background-color: #e7f4e7; }
-    .peso-medio { background-color: #fff7d9; }
-    .peso-pesado { background-color: #fbe4e4; }
-  </style>
+    <title>Lista de Inscritos</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            background-color: #003300;
+            color: #fff;
+        }
+        header {
+            background-color: #004d00;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        header img {
+            height: 80px;
+            margin-right: 10px;
+            vertical-align: middle;
+        }
+        .container {
+            flex: 1;
+            padding: 20px;
+        }
+        .title {
+            font-size: 24px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: #004d00;
+            color: #fff;
+        }
+        th, td {
+            border: 1px solid #00a000;
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background-color: #008800;
+            font-size: 18px;
+        }
+        tr:nth-child(even) {
+            background-color: #005500;
+        }
+        tr:hover {
+            background-color: #00a000;
+        }
+        button {
+            padding: 6px 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+            color: white;
+        }
+        .edit-btn {
+            background-color: #007bff;
+        }
+        .edit-btn:hover {
+            background-color: #0056b3;
+        }
+        .delete-btn {
+            background-color: #ff4d4d;
+        }
+        .delete-btn:hover {
+            background-color: #cc0000;
+        }
+        footer {
+            background-color: #004d00;
+            text-align: center;
+            padding: 10px;
+            color: white;
+        }
+        footer a {
+            color: #00ff00;
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
-  <div class="container">
-    <h2>Inscritos - Campeonato de Jiu-Jitsu</h2>
+    <!-- Cabeçalho -->
+    <header>
+      <button><a href="admin.html">Admin</a></button>
+            <button><a href="index.html">Login</a></button>
+            <button><a href="autor.html">Autor</a></button>
+            <button><a href="CadastroUsu.html">Cadastro</a></button>
+      <img src="image/serra.jpg" style="width: 400px; height: 300px;"alt="Logo Open Jiu-Jitsu">
+      <img src="image/vale.png" style="width: 400px; height: 300px;"alt="Logo Academia">
+    </header>
 
-    <!-- Grupo Faixa Branca -->
-    <div class="group faixa-branca">
-      <h3>Faixa Branca</h3>
-      <ul>
-        <li class="peso-leve">Carlos - Peso Leve</li>
-        <li class="peso-medio">Ana - Peso Médio</li>
-        <li class="peso-pesado">João - Peso Pesado</li>
-      </ul>
+    <!-- Conteúdo Principal -->
+    <div class="container">
+        <h2 class="title">Lista de Inscritos</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Idade</th>
+                    <th>Faixa</th>
+                    <th>Peso</th>
+                    <th>Categoria</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>João Silva</td>
+                    <td>25</td>
+                    <td>Faixa Preta</td>
+                    <td>80kg</td>
+                    <td>Adulto Masculino</td>
+                    <td>
+                        <button class="edit-btn" onclick="editarInscrito('João Silva')">Editar</button>
+                        <button class="delete-btn" onclick="apagarInscrito('João Silva')">Apagar</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Ana Pereira</td>
+                    <td>22</td>
+                    <td>Faixa Roxa</td>
+                    <td>65kg</td>
+                    <td>Adulto Feminino</td>
+                    <td>
+                        <button class="edit-btn" onclick="editarInscrito('Ana Pereira')">Editar</button>
+                        <button class="delete-btn" onclick="apagarInscrito('Ana Pereira')">Apagar</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Lucas Oliveira</td>
+                    <td>18</td>
+                    <td>Faixa Azul</td>
+                    <td>70kg</td>
+                    <td>Juvenil Masculino</td>
+                    <td>
+                        <button class="edit-btn" onclick="editarInscrito('Lucas Oliveira')">Editar</button>
+                        <button class="delete-btn" onclick="apagarInscrito('Lucas Oliveira')">Apagar</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Mariana Costa</td>
+                    <td>28</td>
+                    <td>Faixa Marrom</td>
+                    <td>58kg</td>
+                    <td>Adulto Feminino</td>
+                    <td>
+                        <button class="edit-btn" onclick="editarInscrito('Mariana Costa')">Editar</button>
+                        <button class="delete-btn" onclick="apagarInscrito('Mariana Costa')">Apagar</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Pedro Santos</td>
+                    <td>30</td>
+                    <td>Faixa Preta</td>
+                    <td>85kg</td>
+                    <td>Master Masculino</td>
+                    <td>
+                        <button class="edit-btn" onclick="editarInscrito('Pedro Santos')">Editar</button>
+                        <button class="delete-btn" onclick="apagarInscrito('Pedro Santos')">Apagar</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
     </div>
 
-    <!-- Grupo Faixa Azul -->
-    <div class="group faixa-azul">
-      <h3>Faixa Azul</h3>
-      <ul>
-        <li class="peso-leve">Fernanda - Peso Leve</li>
-        <li class="peso-medio">Roberto - Peso Médio</li>
-        <li class="peso-pesado">Mariana - Peso Pesado</li>
-      </ul>
-    </div>
+    <!-- Rodapé -->
+    <footer>
+        <p>Desenvolvido por <a href="autor.html">Genilson Gomes</a></p>
+    </footer>
 
-    <!-- Grupo Faixa Preta -->
-    <div class="group faixa-preta">
-      <h3>Faixa Preta</h3>
-      <ul>
-        <li class="peso-leve">Pedro - Peso Leve</li>
-        <li class="peso-medio">Lucas - Peso Médio</li>
-        <li class="peso-pesado">Gabriela - Peso Pesado</li>
-        <li class="peso-pesado">Fernando - Peso Pesado</li>
-      </ul>
-    </div>
-  </div>
+    <!-- Scripts -->
+    <script>
+        function editarInscrito(nome) {
+            alert('Editar inscrito: ' + nome);
+            // Lógica de edição aqui
+        }
+
+        function apagarInscrito(nome) {
+            if (confirm('Tem certeza que deseja apagar o inscrito: ' + nome + '?')) {
+                alert('Inscrito apagado: ' + nome);
+                // Lógica de exclusão aqui
+            }
+        }
+    </script>
 </body>
 </html>

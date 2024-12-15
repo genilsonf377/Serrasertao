@@ -1,34 +1,128 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-    <body bgcolor="#11b91f">
- 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Serra Sertão</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Open Jiu-Jitsu</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            background: #002b00;
+            color: #fff;
+        }
+        .container {
+            display: flex;
+            flex: 1;
+        }
+        .left-panel {
+            flex: 2;
+            position: relative;
+            background: url('https://via.placeholder.com/600x800') no-repeat center/cover;
+        }
+        .left-panel img {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            width: 150px;
+        }
+        .left-panel .info {
+            position: absolute;
+            bottom: 30px;
+            left: 20px;
+            font-size: 1.8rem;
+        }
+        .right-panel {
+            flex: 1;
+            background-color: #004d00;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        .right-panel img {
+            width: 120px;
+            margin-bottom: 20px;
+        }
+        .form-container {
+            width: 100%;
+            max-width: 300px;
+            text-align: center;
+        }
+        .form-container input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+        }
+        .form-container button {
+            width: 100%;
+            padding: 10px;
+            background-color: #00a000;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+        .form-container button:hover {
+            background-color: #008800;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #003300;
+            color: white;
+        }
+        footer a {
+            color: #00ff00;
+            text-decoration: none;
+        }
+    </style>
 </head>
-
-
-    <div>
-    <h1>Serra Sertão</h1>
-    <h2>Incrições para o campeonato.</h2>
-    
-    <nav>
-        <ul>
-            <button><li><a href="autor.html">Autor</a></li></button><br><br>
-            <button><li><a href="inscritos.html">Inscritos</a></li></ul></button>
-        </ul>
-      </nav>
-    
-    <div>
-        <img src="image/serra.jpg" alt="serra sertão " width="1500" height="800">
+<body>
+    <div class="container">
+        <!-- Painel Esquerdo -->
+        <div class="left-panel">
+            <button><a href="admin.html">Admin</a></button>
+            <button><a href="inscritos.html">Inscritos</a></button>
+            <button><a href="autor.html">Autor</a></button>
+            <button><a href="inscritos.html">Inscritos</a></button>
+            <button><a href="CadastroUsu.html">Cadastro</a></button>
+            <img src="image/leandroLo.png" style="width: 978px; height: 718px;" alt="Logo Jiu-Jitsu">
+            <div class="info">Serra Sertão<br>Jiu-Jitsu</div>
+        </div>
+        
+        <!-- Painel Direito -->
+        <div class="right-panel">
+            <img src="image/serra.jpg" alt="Academia Logo">
+            <div class="form-container">
+                <h3>Bem-vindo à plataforma de inscrição do Open</h3>
+                <input type="email" placeholder="Email">
+                <input type="password" placeholder="Senha">
+                <div>
+                    <input type="checkbox" id="saveLogin">
+                    <label for="saveLogin">Salvar login</label>
+                </div><br>
+                <button>Login</button>
+                <br><br>
+                <p>É novo aqui? <a href="CadastroUsu.html">Crie sua conta</a></p>
+            </div>
+        </div>
     </div>
-    <div style="text-align: center;" >
-        <textarea style="text-align: center;width: 500px; height: 40px; resize: none;">Digite seu E-mail</textarea><br>
-        <textarea style="text-align: center;width: 500px; height: 40px; resize: none;">Digite sua Senha</textarea>
-        <div style="text-align: center;"><button> Entrar</button></div>
-        </div></div>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>Desenvolvido por <a href="autor.html" target="_blank">Genilson Gomes</a></p>
+    </footer>
 </body>
 </html>
-

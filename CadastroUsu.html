@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Inscritos</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            background: #f5f5f5;
+            color: #333;
+        }
+        header {
+            background-color: #004d00;
+            color: #fff;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            flex: 1;
+            padding: 20px;
+        }
+        .form-container {
+            background: #fff;
+            padding: 20px;
+            width: 100%;
+            max-width: 500px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .form-container h2 {
+            margin-bottom: 20px;
+            text-align: center;
+            color: #004d00;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        .form-group input, .form-group select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+        .form-group input:focus, .form-group select:focus {
+            outline: none;
+            border-color: #00a000;
+        }
+        .submit-btn {
+            width: 100%;
+            padding: 10px;
+            background-color: #00a000;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+        .submit-btn:hover {
+            background-color: #008800;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #004d00;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <h1>Cadastro de Inscritos - Open Jiu-Jitsu</h1>
+        <button><a href="index.html">Login</a></button>
+            <button><a href="autor.html">Autor</a></button>
+            <button><a href="CadastroUsu.html">Cadastro</a></button>
+    </header>
+
+    <!-- Área de Cadastro -->
+    <div class="container">
+        <div class="form-container">
+            <h2>Formulário de Inscrição</h2>
+            <form action="#" method="post">
+                <div class="form-group">
+                    <label for="nome">Nome</label>
+                    <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+                </div>
+                <div class="form-group">
+                    <label for="idade">Idade</label>
+                    <input type="number" id="idade" name="idade" placeholder="Digite sua idade" required>
+                </div>
+                <div class="form-group">
+                    <label for="peso">Peso (kg)</label>
+                    <input type="number" id="peso" name="peso" placeholder="Digite seu peso" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+                </div>
+                <div class="form-group">
+                    <label for="senha">Senha</label>
+                    <input type="password" id="senha" name="senha" placeholder="Digite sua senha" required>
+                </div>
+                <div class="form-group">
+                    <label for="faixa">Cor da Faixa</label>
+                    <select id="faixa" name="faixa" required>
+                        <option value="" disabled selected>Selecione sua faixa</option>
+                        <option value="branca">Branca</option>
+                        <option value="azul">Azul</option>
+                        <option value="roxa">Roxa</option>
+                        <option value="marrom">Marrom</option>
+                        <option value="preta">Preta</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="categoria">Categoria de Peso</label>
+                    <select id="categoria" name="categoria" required>
+                        <option value="" disabled selected>Selecione sua categoria</option>
+                        <option value="leve">Leve (até 70kg)</option>
+                        <option value="médio">Médio (até 80kg)</option>
+                        <option value="pesado">Pesado (até 100kg)</option>
+                        <option value="super-pesado">Super Pesado (acima de 100kg)</option>
+                    </select>
+                </div>
+                <button type="submit" class="submit-btn">Cadastrar</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>Desenvolvido por <a href="autor.html" style="color: #00ff00;">Genilson Gomes</a></p>
+    </footer>
+</body>
+</html>

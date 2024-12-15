@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página do Administrador</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            background-color: #003300;
+            color: #fff;
+        }
+        header {
+            background-color: #004d00;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        header img {
+            height: 80px;
+            margin-right: 10px;
+            vertical-align: middle;
+        }
+        .container {
+            flex: 1;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .title {
+            font-size: 24px;
+            margin: 20px 0;
+            text-align: center;
+        }
+        .admin-menu {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            max-width: 600px;
+        }
+        .menu-button {
+            background-color: #00a000;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            border-radius: 10px;
+            text-decoration: none;
+            font-size: 18px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: background-color 0.3s;
+        }
+        .menu-button:hover {
+            background-color: #008800;
+        }
+        footer {
+            background-color: #004d00;
+            text-align: center;
+            padding: 10px;
+            color: white;
+        }
+        footer a {
+            color: #00ff00;
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <img src="image/serra.jpg" style="width: 400px; height: 300px;"alt="Logo Open Jiu-Jitsu">
+        <img src="image/vale.png" style="width: 400px; height: 300px;"alt="Logo Academia">
+    </header>
+
+    <!-- Conteúdo Principal -->
+    <div class="container">
+        <h2 class="title">Página da Administração</h2>
+        <div class="admin-menu">
+            <a href="index.html" class="menu-button">📅 Login</a>
+            <a href="inscritos.html" class="menu-button">📋 Lista de inscritos</a>
+            <a href="CadastroUsu.html" class="menu-button">💳 Cadastro de usuários</a>
+            <a href="#" class="menu-button">📊 Rankings</a>
+        </div>
+    </div>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>Desenvolvido por <a href="sobre.html">Genilson Gomes</a></p>
+    </footer>
+</body>
+</html>

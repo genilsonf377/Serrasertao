@@ -1,32 +1,110 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-    <body bgcolor="#11b91f">
- 
 <head>
     <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Serra Sertão</title>
-    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre o Autor</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            background-color: #003300;
+            color: #fff;
+        }
+        header {
+            background-color: #004d00;
+            padding: 10px;
+            text-align: center;
+        }
+        header nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        header nav a:hover {
+            color: #00ff00;
+        }
+        main {
+            flex: 1;
+            padding: 20px;
+            text-align: center;
+        }
+        main h1 {
+            font-size: 28px;
+            margin-bottom: 20px;
+            color: #00ff00;
+        }
+        main p {
+            font-size: 18px;
+            margin-bottom: 30px;
+            line-height: 1.6;
+        }
+        .tech-images {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .tech-images img {
+            width: 200px;
+            height: 200px;
+            object-fit: contain;
+            background-color: #fff;
+            padding: 10px;
+            border-radius: 10px;
+        }
+        footer {
+            background-color: #004d00;
+            text-align: center;
+            padding: 10px;
+            color: white;
+        }
+        footer a {
+            color: #00ff00;
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <nav>
+            <a href="index.html">Início</a>
+            <a href="inscritos.html">Inscritos</a>
+        </nav>
+    </header>
 
+    <!-- Conteúdo Principal -->
+    <main>
+        <h1>Quem sou?</h1>
+        <p>Me chamo <strong>Francisco Genilson Ferreira Gomes</strong>. <br>
+           Sou estudante do curso de Informática para Internet no IFCE campus Tianguá.<br>
+           Estou desenvolvendo um site para inscrições de campeonato de Jiu-Jitsu, utilizando ferramentas como:
+        </p>
+        <div class="tech-images">
+          <img src="image/figma.webp" alt="Figma" width="320" height="205">
+          <img src="image/javaScript.png" alt="JavaScript" width="320" height="205">
+          <img src="image/css.png" alt="Css" width="320" height="205">
+          <img src="image/HTML.png" alt="Html" width="320" height="205">
+        </div>
+    </main>
 
-    <div>
-    <h1>Serra Sertão</h1>
-    <h2>Incrições para o campeonato.</h2>
-    
-    <nav>
-        <ul>
-            <button><li><a href="index.html">Início</a></li></button><br><br>
-            <button><li><a href="inscritos.html">Inscritos</a></li></ul></button>
-        </ul>
-      </nav>
-    </div>
-    <div><h1 style="text-align: center;">Quem sou?</h1>
-    <h2 style="text-align: center;">Me chamo Francisco Genilson Ferreira Gomes<br>
-    Sou estudante do curso de informática para internet no IFCE campus Tianguá,<br>
-    E estou desenvolvendo um Site para inscrições de campeonato de Jiu Jitsu, onde estou utilizando<br>
-    Ferramentas como o Figma, JavaScript, Html e Css.</h2></div>
-    <div>   <img src="image/figma.webp" alt="Figma" width="320" height="205">
-            <img src="image/javaScript.png" alt="JavaScript" width="320" height="205">
-            <img src="image/css.png" alt="Css" width="320" height="205">
-            <img src="image/HTML.png" alt="Html" width="320" height="205"></div>
+    <!-- Rodapé -->
+    <footer>
+        <p>Desenvolvido por <a href="autor.html">Genilson Gomes</a></p>
+    </footer>
+</body>
+</html>
+</div>
