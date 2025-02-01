@@ -1,0 +1,101 @@
+/* Importando Open Props */
+@import "https://unpkg.com/open-props";
+
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font-sans);
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: var(--green-10);
+  color: var(--gray-0);
+}
+
+.container {
+  display: flex;
+  flex: 1;
+}
+
+.left-panel {
+  flex: 2;
+  position: relative;
+  background: url('https://via.placeholder.com/600x800') no-repeat center/cover;
+  padding: var(--size-3);
+}
+
+.left-panel img {
+  position: absolute;
+  top: var(--size-4);
+  left: var(--size-4);
+  width: var(--size-15);
+}
+
+.left-panel .info {
+  position: absolute;
+  bottom: var(--size-4);
+  left: var(--size-4);
+  font-size: var(--font-size-fluid-2);
+  font-weight: bold;
+}
+
+.right-panel {
+  flex: 1;
+  background-color: var(--green-9);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: var(--size-5);
+}
+
+.right-panel img {
+  width: var(--size-10);
+  margin-bottom: var(--size-4);
+}
+
+.form-container {
+  width: 100%;
+  max-width: 300px;
+  text-align: center;
+}
+
+.form-container input {
+  width: 100%;
+  padding: var(--size-3);
+  margin: var(--size-2) 0;
+  border: none;
+  border-radius: var(--radius-2);
+}
+
+.form-container button {
+  width: 100%;
+  padding: var(--size-3);
+  background-color: var(--green-6);
+  color: var(--gray-0);
+  border: none;
+  cursor: pointer;
+  border-radius: var(--radius-2);
+  font-size: var(--font-size-2);
+}
+
+.form-container button:hover {
+  background-color: var(--green-5);
+}
+
+footer {
+  text-align: center;
+  padding: var(--size-3);
+  background-color: var(--green-8);
+  color: var(--gray-0);
+}
+
+footer a {
+  color: var(--green-3);
+  text-decoration: none;
+}
